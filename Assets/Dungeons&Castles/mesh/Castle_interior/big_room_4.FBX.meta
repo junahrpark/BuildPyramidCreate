@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 651036f231730e14b8c24b9bb950d1cb
+timeCreated: 1462892694
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: big_room_4_floor
+    100004: big_room_4_left_part
+    100006: big_room_4_left_part_MeshPart0
+    100008: big_room_4_left_part_MeshPart1
+    100010: big_room_4_left_part_MeshPart2
+    100012: big_room_4_left_part_MeshPart3
+    100014: big_room_4_left_part_MeshPart4
+    100016: big_room_4_right_part
+    100018: big_room_4_right_part_MeshPart0
+    100020: big_room_4_right_part_MeshPart1
+    100022: big_room_4_right_part_MeshPart2
+    100024: big_room_4_right_part_MeshPart3
+    100026: big_room_4_right_part_MeshPart4
+    100028: big_room_4_roof
+    100030: door00
+    100032: door01
+    100034: door02
+    100036: door03
+    100038: door04
+    100040: door05
+    100042: fountain
+    100044: pin
+    400000: //RootNode
+    400002: big_room_4_floor
+    400004: big_room_4_left_part
+    400006: big_room_4_left_part_MeshPart0
+    400008: big_room_4_left_part_MeshPart1
+    400010: big_room_4_left_part_MeshPart2
+    400012: big_room_4_left_part_MeshPart3
+    400014: big_room_4_left_part_MeshPart4
+    400016: big_room_4_right_part
+    400018: big_room_4_right_part_MeshPart0
+    400020: big_room_4_right_part_MeshPart1
+    400022: big_room_4_right_part_MeshPart2
+    400024: big_room_4_right_part_MeshPart3
+    400026: big_room_4_right_part_MeshPart4
+    400028: big_room_4_roof
+    400030: door00
+    400032: door01
+    400034: door02
+    400036: door03
+    400038: door04
+    400040: door05
+    400042: fountain
+    400044: pin
+    2300000: big_room_4_floor
+    2300002: big_room_4_left_part_MeshPart0
+    2300004: big_room_4_left_part_MeshPart1
+    2300006: big_room_4_left_part_MeshPart2
+    2300008: big_room_4_left_part_MeshPart3
+    2300010: big_room_4_left_part_MeshPart4
+    2300012: big_room_4_right_part_MeshPart0
+    2300014: big_room_4_right_part_MeshPart1
+    2300016: big_room_4_right_part_MeshPart2
+    2300018: big_room_4_right_part_MeshPart3
+    2300020: big_room_4_right_part_MeshPart4
+    2300022: big_room_4_roof
+    2300024: door00
+    2300026: door01
+    2300028: door02
+    2300030: door03
+    2300032: door04
+    2300034: door05
+    2300036: fountain
+    2300038: pin
+    3300000: big_room_4_floor
+    3300002: big_room_4_left_part_MeshPart0
+    3300004: big_room_4_left_part_MeshPart1
+    3300006: big_room_4_left_part_MeshPart2
+    3300008: big_room_4_left_part_MeshPart3
+    3300010: big_room_4_left_part_MeshPart4
+    3300012: big_room_4_right_part_MeshPart0
+    3300014: big_room_4_right_part_MeshPart1
+    3300016: big_room_4_right_part_MeshPart2
+    3300018: big_room_4_right_part_MeshPart3
+    3300020: big_room_4_right_part_MeshPart4
+    3300022: big_room_4_roof
+    3300024: door00
+    3300026: door01
+    3300028: door02
+    3300030: door03
+    3300032: door04
+    3300034: door05
+    3300036: fountain
+    3300038: pin
+    4300000: door05
+    4300002: door04
+    4300004: door03
+    4300006: door02
+    4300008: door01
+    4300010: door00
+    4300012: pin
+    4300014: fountain
+    4300016: big_room_4_floor
+    4300018: big_room_4_roof
+    4300020: big_room_4_right_part_MeshPart0
+    4300022: big_room_4_right_part_MeshPart1
+    4300024: big_room_4_right_part_MeshPart2
+    4300026: big_room_4_right_part_MeshPart3
+    4300028: big_room_4_right_part_MeshPart4
+    4300030: big_room_4_left_part_MeshPart0
+    4300032: big_room_4_left_part_MeshPart1
+    4300034: big_room_4_left_part_MeshPart2
+    4300036: big_room_4_left_part_MeshPart3
+    4300038: big_room_4_left_part_MeshPart4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

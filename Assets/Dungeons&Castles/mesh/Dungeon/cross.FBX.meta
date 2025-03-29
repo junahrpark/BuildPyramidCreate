@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: 9d556744f05fdef4783acc8489f7ca02
+timeCreated: 1460300146
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bricks
+    100002: cap_lod_0
+    100004: cap_lod_1
+    100006: collider01
+    100008: collider02
+    100010: collider03
+    100012: collider04
+    100014: collider05
+    100016: collider06
+    100018: collider07
+    100020: collider08
+    100022: collider09
+    100024: //RootNode
+    100026: cross_floor_lod_0
+    100028: cross_floor_lod_1
+    100030: cross_roof_lod_0
+    100032: cross_roof_lod_1
+    100034: pin
+    400000: bricks
+    400002: cap_lod_0
+    400004: cap_lod_1
+    400006: collider01
+    400008: collider02
+    400010: collider03
+    400012: collider04
+    400014: collider05
+    400016: collider06
+    400018: collider07
+    400020: collider08
+    400022: collider09
+    400024: //RootNode
+    400026: cross_floor_lod_0
+    400028: cross_floor_lod_1
+    400030: cross_roof_lod_0
+    400032: cross_roof_lod_1
+    400034: pin
+    2300000: bricks
+    2300002: cap_lod_0
+    2300004: cap_lod_1
+    2300006: collider01
+    2300008: collider02
+    2300010: collider03
+    2300012: collider04
+    2300014: collider05
+    2300016: collider06
+    2300018: collider07
+    2300020: collider08
+    2300022: collider09
+    2300024: cross_floor_lod_0
+    2300026: cross_floor_lod_1
+    2300028: cross_roof_lod_0
+    2300030: cross_roof_lod_1
+    2300032: pin
+    3300000: bricks
+    3300002: cap_lod_0
+    3300004: cap_lod_1
+    3300006: collider01
+    3300008: collider02
+    3300010: collider03
+    3300012: collider04
+    3300014: collider05
+    3300016: collider06
+    3300018: collider07
+    3300020: collider08
+    3300022: collider09
+    3300024: cross_floor_lod_0
+    3300026: cross_floor_lod_1
+    3300028: cross_roof_lod_0
+    3300030: cross_roof_lod_1
+    3300032: pin
+    4300000: pin
+    4300002: bricks
+    4300004: cross_floor_lod_0
+    4300006: cross_floor_lod_1
+    4300008: cross_roof_lod_0
+    4300010: cross_roof_lod_1
+    4300012: cap_lod_0
+    4300014: cap_lod_1
+    4300016: collider08
+    4300018: collider07
+    4300020: collider02
+    4300022: collider01
+    4300024: collider05
+    4300026: collider06
+    4300028: collider03
+    4300030: collider04
+    4300032: collider09
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

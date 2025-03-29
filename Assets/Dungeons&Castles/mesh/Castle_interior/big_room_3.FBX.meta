@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: a35d5a4e0ab552642b7f3aa03a3c9891
+timeCreated: 1462892278
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: big_room_3_floor
+    100004: big_room_3_left_part
+    100006: big_room_3_left_part_MeshPart0
+    100008: big_room_3_left_part_MeshPart1
+    100010: big_room_3_left_part_MeshPart2
+    100012: big_room_3_right_part
+    100014: big_room_3_right_part_MeshPart0
+    100016: big_room_3_right_part_MeshPart1
+    100018: big_room_3_right_part_MeshPart2
+    100020: big_room_3_roof
+    100022: big_room_3_roof_MeshPart0
+    100024: big_room_3_roof_MeshPart1
+    100026: big_room_3_roof_MeshPart2
+    100028: big_room_3_roof_MeshPart3
+    100030: collider
+    100032: collider 1
+    100034: pin
+    400000: //RootNode
+    400002: big_room_3_floor
+    400004: big_room_3_left_part
+    400006: big_room_3_left_part_MeshPart0
+    400008: big_room_3_left_part_MeshPart1
+    400010: big_room_3_left_part_MeshPart2
+    400012: big_room_3_right_part
+    400014: big_room_3_right_part_MeshPart0
+    400016: big_room_3_right_part_MeshPart1
+    400018: big_room_3_right_part_MeshPart2
+    400020: big_room_3_roof
+    400022: big_room_3_roof_MeshPart0
+    400024: big_room_3_roof_MeshPart1
+    400026: big_room_3_roof_MeshPart2
+    400028: big_room_3_roof_MeshPart3
+    400030: collider
+    400032: collider 1
+    400034: pin
+    2300000: big_room_3_floor
+    2300002: big_room_3_left_part_MeshPart0
+    2300004: big_room_3_left_part_MeshPart1
+    2300006: big_room_3_left_part_MeshPart2
+    2300008: big_room_3_right_part_MeshPart0
+    2300010: big_room_3_right_part_MeshPart1
+    2300012: big_room_3_right_part_MeshPart2
+    2300014: big_room_3_roof_MeshPart0
+    2300016: big_room_3_roof_MeshPart1
+    2300018: big_room_3_roof_MeshPart2
+    2300020: big_room_3_roof_MeshPart3
+    2300022: collider
+    2300024: collider 1
+    2300026: pin
+    3300000: big_room_3_floor
+    3300002: big_room_3_left_part_MeshPart0
+    3300004: big_room_3_left_part_MeshPart1
+    3300006: big_room_3_left_part_MeshPart2
+    3300008: big_room_3_right_part_MeshPart0
+    3300010: big_room_3_right_part_MeshPart1
+    3300012: big_room_3_right_part_MeshPart2
+    3300014: big_room_3_roof_MeshPart0
+    3300016: big_room_3_roof_MeshPart1
+    3300018: big_room_3_roof_MeshPart2
+    3300020: big_room_3_roof_MeshPart3
+    3300022: collider
+    3300024: collider 1
+    3300026: pin
+    4300000: pin
+    4300002: big_room_3_roof_MeshPart0
+    4300004: big_room_3_roof_MeshPart1
+    4300006: big_room_3_roof_MeshPart2
+    4300008: big_room_3_roof_MeshPart3
+    4300010: big_room_3_floor
+    4300012: big_room_3_right_part_MeshPart0
+    4300014: big_room_3_right_part_MeshPart1
+    4300016: big_room_3_right_part_MeshPart2
+    4300018: big_room_3_left_part_MeshPart0
+    4300020: big_room_3_left_part_MeshPart1
+    4300022: big_room_3_left_part_MeshPart2
+    4300024: collider
+    4300026: collider
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 9b1caeca523ee584cb480759b59c6625
+timeCreated: 1460300340
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bricks
+    100002: collider01
+    100004: collider02
+    100006: collider03
+    100008: collider04
+    100010: collider05
+    100012: collider06
+    100014: collider07
+    100016: //RootNode
+    100018: cross_big_cap_lod_0
+    100020: cross_big_cap_lod_1
+    100022: cross_big_floor_lod_0
+    100024: cross_big_floor_lod_1
+    100026: cross_big_roof_lod_0
+    100028: cross_big_roof_lod_1
+    100030: pin
+    400000: bricks
+    400002: collider01
+    400004: collider02
+    400006: collider03
+    400008: collider04
+    400010: collider05
+    400012: collider06
+    400014: collider07
+    400016: //RootNode
+    400018: cross_big_cap_lod_0
+    400020: cross_big_cap_lod_1
+    400022: cross_big_floor_lod_0
+    400024: cross_big_floor_lod_1
+    400026: cross_big_roof_lod_0
+    400028: cross_big_roof_lod_1
+    400030: pin
+    2300000: bricks
+    2300002: collider01
+    2300004: collider02
+    2300006: collider03
+    2300008: collider04
+    2300010: collider05
+    2300012: collider06
+    2300014: collider07
+    2300016: cross_big_cap_lod_0
+    2300018: cross_big_cap_lod_1
+    2300020: cross_big_floor_lod_0
+    2300022: cross_big_floor_lod_1
+    2300024: cross_big_roof_lod_0
+    2300026: cross_big_roof_lod_1
+    2300028: pin
+    3300000: bricks
+    3300002: collider01
+    3300004: collider02
+    3300006: collider03
+    3300008: collider04
+    3300010: collider05
+    3300012: collider06
+    3300014: collider07
+    3300016: cross_big_cap_lod_0
+    3300018: cross_big_cap_lod_1
+    3300020: cross_big_floor_lod_0
+    3300022: cross_big_floor_lod_1
+    3300024: cross_big_roof_lod_0
+    3300026: cross_big_roof_lod_1
+    3300028: pin
+    4300000: cross_big_floor_lod_1
+    4300002: cross_big_floor_lod_0
+    4300004: cross_big_roof_lod_1
+    4300006: cross_big_roof_lod_0
+    4300008: cross_big_cap_lod_0
+    4300010: cross_big_cap_lod_1
+    4300012: pin
+    4300014: bricks
+    4300016: collider05
+    4300018: collider06
+    4300020: collider01
+    4300022: collider02
+    4300024: collider07
+    4300026: collider03
+    4300028: collider04
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: acc14cb5fb3ee944988cb8b31956db3c
+timeCreated: 1460301636
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bricks
+    100002: collider01
+    100004: collider02
+    100006: collider03
+    100008: collider04
+    100010: pin
+    100012: //RootNode
+    100014: straight_big_floor_lod_0
+    100016: straight_big_floor_lod_1
+    100018: straight_big_roof_lod_0
+    100020: straight_big_roof_lod_1
+    100022: straight_big_wall_left_lod_0
+    100024: straight_big_wall_left_lod_1
+    100026: straight_big_wall_right_lod_0
+    100028: straight_big_wall_right_lod_1
+    400000: bricks
+    400002: collider01
+    400004: collider02
+    400006: collider03
+    400008: collider04
+    400010: pin
+    400012: //RootNode
+    400014: straight_big_floor_lod_0
+    400016: straight_big_floor_lod_1
+    400018: straight_big_roof_lod_0
+    400020: straight_big_roof_lod_1
+    400022: straight_big_wall_left_lod_0
+    400024: straight_big_wall_left_lod_1
+    400026: straight_big_wall_right_lod_0
+    400028: straight_big_wall_right_lod_1
+    2300000: bricks
+    2300002: collider01
+    2300004: collider02
+    2300006: collider03
+    2300008: collider04
+    2300010: pin
+    2300012: straight_big_floor_lod_0
+    2300014: straight_big_floor_lod_1
+    2300016: straight_big_roof_lod_0
+    2300018: straight_big_roof_lod_1
+    2300020: straight_big_wall_left_lod_0
+    2300022: straight_big_wall_left_lod_1
+    2300024: straight_big_wall_right_lod_0
+    2300026: straight_big_wall_right_lod_1
+    3300000: bricks
+    3300002: collider01
+    3300004: collider02
+    3300006: collider03
+    3300008: collider04
+    3300010: pin
+    3300012: straight_big_floor_lod_0
+    3300014: straight_big_floor_lod_1
+    3300016: straight_big_roof_lod_0
+    3300018: straight_big_roof_lod_1
+    3300020: straight_big_wall_left_lod_0
+    3300022: straight_big_wall_left_lod_1
+    3300024: straight_big_wall_right_lod_0
+    3300026: straight_big_wall_right_lod_1
+    4300000: pin
+    4300002: bricks
+    4300004: straight_big_wall_right_lod_1
+    4300006: straight_big_floor_lod_0
+    4300008: straight_big_floor_lod_1
+    4300010: straight_big_wall_left_lod_0
+    4300012: straight_big_wall_left_lod_1
+    4300014: straight_big_wall_right_lod_0
+    4300016: straight_big_roof_lod_0
+    4300018: straight_big_roof_lod_1
+    4300020: collider01
+    4300022: collider02
+    4300024: collider03
+    4300026: collider04
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

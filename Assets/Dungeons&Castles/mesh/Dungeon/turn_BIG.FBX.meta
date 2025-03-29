@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: c80e29289015bb64fb97309bd4c4791e
+timeCreated: 1460301907
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bricks
+    100002: collider01
+    100004: collider02
+    100006: collider03
+    100008: collider04
+    100010: collider05
+    100012: collider06
+    100014: collider07
+    100016: collider08
+    100018: pin
+    100020: //RootNode
+    100022: turn_big_cap_lod_0
+    100024: turn_big_cap_lod_1
+    100026: turn_big_floor_lod_0
+    100028: turn_big_floor_lod_1
+    100030: turn_big_roof_lod_0
+    100032: turn_big_roof_lod_1
+    100034: turn_big_wall_lod_0
+    100036: turn_big_wall_lod_1
+    400000: bricks
+    400002: collider01
+    400004: collider02
+    400006: collider03
+    400008: collider04
+    400010: collider05
+    400012: collider06
+    400014: collider07
+    400016: collider08
+    400018: pin
+    400020: //RootNode
+    400022: turn_big_cap_lod_0
+    400024: turn_big_cap_lod_1
+    400026: turn_big_floor_lod_0
+    400028: turn_big_floor_lod_1
+    400030: turn_big_roof_lod_0
+    400032: turn_big_roof_lod_1
+    400034: turn_big_wall_lod_0
+    400036: turn_big_wall_lod_1
+    2300000: bricks
+    2300002: collider01
+    2300004: collider02
+    2300006: collider03
+    2300008: collider04
+    2300010: collider05
+    2300012: collider06
+    2300014: collider07
+    2300016: collider08
+    2300018: pin
+    2300020: turn_big_cap_lod_0
+    2300022: turn_big_cap_lod_1
+    2300024: turn_big_floor_lod_0
+    2300026: turn_big_floor_lod_1
+    2300028: turn_big_roof_lod_0
+    2300030: turn_big_roof_lod_1
+    2300032: turn_big_wall_lod_0
+    2300034: turn_big_wall_lod_1
+    3300000: bricks
+    3300002: collider01
+    3300004: collider02
+    3300006: collider03
+    3300008: collider04
+    3300010: collider05
+    3300012: collider06
+    3300014: collider07
+    3300016: collider08
+    3300018: pin
+    3300020: turn_big_cap_lod_0
+    3300022: turn_big_cap_lod_1
+    3300024: turn_big_floor_lod_0
+    3300026: turn_big_floor_lod_1
+    3300028: turn_big_roof_lod_0
+    3300030: turn_big_roof_lod_1
+    3300032: turn_big_wall_lod_0
+    3300034: turn_big_wall_lod_1
+    4300000: pin
+    4300002: bricks
+    4300004: turn_big_floor_lod_0
+    4300006: turn_big_floor_lod_1
+    4300008: turn_big_roof_lod_0
+    4300010: turn_big_roof_lod_1
+    4300012: turn_big_cap_lod_1
+    4300014: turn_big_cap_lod_0
+    4300016: turn_big_wall_lod_0
+    4300018: turn_big_wall_lod_1
+    4300020: collider05
+    4300022: collider06
+    4300024: collider07
+    4300026: collider08
+    4300028: collider04
+    4300030: collider03
+    4300032: collider02
+    4300034: collider01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
