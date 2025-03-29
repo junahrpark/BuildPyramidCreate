@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI; // UI 네임스페이스 추가
 using UnityStandardAssets.CrossPlatformInput;
 
-[RequireComponent(typeof (GUITexture))]
+[RequireComponent(typeof(Image))] // GUITexture 대신 Image 사용
 public class ForcedReset : MonoBehaviour
 {
     private void Update()
@@ -12,7 +13,7 @@ public class ForcedReset : MonoBehaviour
         if (CrossPlatformInputManager.GetButtonDown("ResetObject"))
         {
             //... reload the scene
-            SceneManager.LoadScene(SceneManager.GetSceneAt(0).path);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // 경로 대신 씬 이름 사용
         }
     }
 }

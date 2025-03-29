@@ -32,11 +32,8 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
             {
                 case BuildTarget.Android:
                 case BuildTarget.iOS:
-                case BuildTarget.WP8Player:
-                case BuildTarget.BlackBerry:
-				case BuildTarget.PSM: 
-				case BuildTarget.Tizen: 
-				case BuildTarget.WSAPlayer: 
+                // 지원되지 않는 플랫폼들 제거
+                case BuildTarget.WSAPlayer:
                     EditorUtility.DisplayDialog("Mobile Input",
                                                 "You have enabled Mobile Input. You'll need to use the Unity Remote app on a connected device to control your game in the Editor.",
                                                 "OK");
@@ -67,8 +64,7 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
             {
                 case BuildTarget.Android:
                 case BuildTarget.iOS:
-                case BuildTarget.WP8Player:
-                case BuildTarget.BlackBerry:
+                    // 지원되지 않는 플랫폼들 제거
                     EditorUtility.DisplayDialog("Mobile Input",
                                                 "You have disabled Mobile Input. Mobile control rigs won't be visible, and the Cross Platform Input functions will always return standalone controls.",
                                                 "OK");
@@ -86,25 +82,22 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
 
 
         private static BuildTargetGroup[] buildTargetGroups = new BuildTargetGroup[]
-            {
-                BuildTargetGroup.Standalone,
-                BuildTargetGroup.WebPlayer,
-                BuildTargetGroup.Android,
-                BuildTargetGroup.iOS,
-                BuildTargetGroup.WP8,
-                BuildTargetGroup.BlackBerry
-            };
+        {
+            BuildTargetGroup.Standalone,
+            // BuildTargetGroup.WebPlayer 제거
+            BuildTargetGroup.Android,
+            BuildTargetGroup.iOS,
+            // 지원되지 않는 그룹들 제거
+            BuildTargetGroup.WSA
+        };
 
         private static BuildTargetGroup[] mobileBuildTargetGroups = new BuildTargetGroup[]
-            {
-                BuildTargetGroup.Android,
-                BuildTargetGroup.iOS,
-                BuildTargetGroup.WP8,
-                BuildTargetGroup.BlackBerry,
-				BuildTargetGroup.PSM, 
-				BuildTargetGroup.Tizen, 
-				BuildTargetGroup.WSA 
-            };
+        {
+            BuildTargetGroup.Android,
+            BuildTargetGroup.iOS,
+            // 지원되지 않는 그룹들 제거
+            BuildTargetGroup.WSA
+        };
 
 
         private static void SetEnabled(string defineName, bool enable, bool mobile)
