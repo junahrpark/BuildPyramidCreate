@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4586703557340537653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8.386034, y: 0.49999952, z: 1.3364754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -153,6 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diggingUI: {fileID: 0}
   coverObject: {fileID: 8373772016651629551}
+  playerMovement: {fileID: 0}
+  mouseLook: {fileID: 0}
+  playerInteraction: {fileID: 0}
 --- !u!1 &9011857419800206351
 GameObject:
   m_ObjectHideFlags: 0
