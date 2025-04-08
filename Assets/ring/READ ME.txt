@@ -1,0 +1,6 @@
+This is a ring pack,
+with 17 base models and 34 material balls.
+You can adjust the material color to get more variations.
+Because the upload requires the size to be realistic,
+they are reduced by 20 times.
+You can zoom in to see it.
