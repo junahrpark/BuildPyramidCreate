@@ -88,19 +88,18 @@ public class DiggingMiniGame : MonoBehaviour
     {
         Debug.Log("DiggingMiniGame UI 비활성화됨. 컨트롤 복구 시도.");
 
-        // 씬에서 플레이어 컨트롤 스크립트들을 찾습니다.
-        // (주의: 이 방식은 씬에 해당 타입의 스크립트가 하나만 있다고 가정합니다)
+        // ✅ 보상 씬 오브젝트 활성화 예약
+        SceneRewardActivator.ActivateInNextScene();
+
+        // 기존 컨트롤 복구
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
         MouseLook mouseLook = FindObjectOfType<MouseLook>();
         PlayerInteraction playerInteraction = FindObjectOfType<PlayerInteraction>();
 
-        // 찾은 스크립트들을 다시 활성화합니다. (null 체크 필수)
         if (playerMovement != null) playerMovement.enabled = true;
         if (mouseLook != null) mouseLook.enabled = true;
         if (playerInteraction != null) playerInteraction.enabled = true;
 
-        // 게임이 종료되는 상황 등이 아니라면 커서를 다시 잠급니다.
-        // PlayerMovement가 활성화 되어있다는 것은 플레이어 모드로 돌아감을 의미.
         if (playerMovement != null && playerMovement.enabled)
         {
             Cursor.lockState = CursorLockMode.Locked;

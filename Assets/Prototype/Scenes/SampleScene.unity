@@ -297,6 +297,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7cc05c9cca4acf48a020e67dc6bcdd0, type: 3}
+--- !u!1 &699510247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699510249}
+  - component: {fileID: 699510248}
+  m_Layer: 0
+  m_Name: RewardActivator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &699510248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699510247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c1609828cd37b4c9eba993fd30a9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: 05 Auto Turning
+  targetObjectName: umoolpng
+--- !u!4 &699510249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699510247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0381035, y: -0.41142318, z: 0.8791352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &794573813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5474760257327013052, guid: 504a63480f32324419d634802a33b5cb,
@@ -971,3 +1017,4 @@ SceneRoots:
   - {fileID: 1183797885087573657}
   - {fileID: 2182664206763425374}
   - {fileID: 1952082031}
+  - {fileID: 699510249}
