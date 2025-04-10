@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1fa354153ae8fd54fbd08a383c423345
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Shaders/SS_Minerals_PFX.shader
+  uploadId: 638280

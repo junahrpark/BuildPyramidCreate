@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e9608500f61f57a42940e2f4d1dcdce5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Materials/PFX_GlowTrail.mat
+  uploadId: 638280

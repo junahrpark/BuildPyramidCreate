@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7843a38939285bc4e8cf8521d931e4e6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Prefabs/PFX/PFX_GlowLines.prefab
+  uploadId: 638280

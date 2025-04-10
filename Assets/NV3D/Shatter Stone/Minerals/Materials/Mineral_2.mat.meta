@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 91b1ccd80b17d0946ba1207b97509f65
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Materials/Mineral_2.mat
+  uploadId: 638280

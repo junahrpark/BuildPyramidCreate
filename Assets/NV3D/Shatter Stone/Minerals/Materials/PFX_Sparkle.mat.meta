@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b52475a36005f3f4698051969f04d6b9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Materials/PFX_Sparkle.mat
+  uploadId: 638280

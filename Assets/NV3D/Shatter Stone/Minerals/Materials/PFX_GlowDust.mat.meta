@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5b9f00e4041306b4d9b0df0872354257
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Materials/PFX_GlowDust.mat
+  uploadId: 638280
