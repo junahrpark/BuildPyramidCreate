@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScriptBoy/Procedural Book/Demo/Scenes/05 Auto Turning.unity
     guid: 665013fd40c2073409cab1937874b520
+  - enabled: 1
+    path: Assets/Prototype/Scenes/Pyramid.unity
+    guid: d9ddeb6b82d711f45ad4a427788d0ba9
+  - enabled: 1
+    path: Assets/Prototype/Scenes/Korea.unity
+    guid: acacdbe14854a8c479e44b9d06dc86e8
   m_configObjects: {}

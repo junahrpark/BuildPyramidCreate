@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 031b692e7c16c0f4593413c921a4ed78
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264570
+  packageName: 'Shatter Stone: Minerals & Crystals Mining Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Minerals/Shaders/URP/SS_Mineral_PFX_URP.shader
+  uploadId: 638280

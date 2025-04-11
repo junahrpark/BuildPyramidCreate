@@ -17,4 +17,4 @@ Thank you for purchasing Shatter Stone: Minerals & Crystals, please consider lea
 https://assetstore.unity.com/publishers/314
 
 
-// For questions and queries please contact me here: matt.nv3d@gmail.com //
+// For questions and queries please contact me here: matt.nv3d@gmail.com //0000000000000000000000000000000000000000000000000000000000000000000000000000000
