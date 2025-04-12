@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0ca794655d6032048ac76ecf6ce5d19e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269409
+  packageName: 'Shatter Stone: Fossils'
+  packageVersion: 1.1
+  assetPath: Assets/NV3D/SS_Fossils/Shaders/SS_FossilNode.shader
+  uploadId: 639484

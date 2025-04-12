@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ad6c933b70ecf1343b0647c19faf7ad7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269409
+  packageName: 'Shatter Stone: Fossils'
+  packageVersion: 1.1
+  assetPath: Assets/NV3D/SS_Fossils/Prefabs/PFX/PFX_GlowDust.prefab
+  uploadId: 639484

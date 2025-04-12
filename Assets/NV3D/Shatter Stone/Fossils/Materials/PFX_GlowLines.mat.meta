@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c4edfb44892ad6b48ad9364492db2f74
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269409
+  packageName: 'Shatter Stone: Fossils'
+  packageVersion: 1.1
+  assetPath: Assets/NV3D/SS_Fossils/Materials/PFX_GlowLines.mat
+  uploadId: 639484

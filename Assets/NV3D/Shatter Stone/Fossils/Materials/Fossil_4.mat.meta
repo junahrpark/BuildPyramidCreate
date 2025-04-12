@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f39fbdc3e2ba0f41a4e4b2bc88e826d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269409
+  packageName: 'Shatter Stone: Fossils'
+  packageVersion: 1.1
+  assetPath: Assets/NV3D/SS_Fossils/Materials/Fossil_4.mat
+  uploadId: 639484

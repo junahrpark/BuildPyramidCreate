@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e7648211c9787524da0feb789b68b05a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267550
+  packageName: 'Shatter Stone: Stones & Rocks Resource Pack'
+  packageVersion: 1.1.1
+  assetPath: Assets/NV3D/SS_Stone/Shaders/URP/SS_Stone_PFX_URP.shader
+  uploadId: 638284

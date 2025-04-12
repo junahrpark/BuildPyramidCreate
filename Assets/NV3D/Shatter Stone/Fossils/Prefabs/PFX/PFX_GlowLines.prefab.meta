@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0fe0b0f636261e2408a4670f44e2862e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269409
+  packageName: 'Shatter Stone: Fossils'
+  packageVersion: 1.1
+  assetPath: Assets/NV3D/SS_Fossils/Prefabs/PFX/PFX_GlowLines.prefab
+  uploadId: 639484

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f12a88b5705a8634684c84a8318ecb50
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269409
+  packageName: 'Shatter Stone: Fossils'
+  packageVersion: 1.1
+  assetPath: Assets/NV3D/SS_Fossils/Materials/PFX_Debris.mat
+  uploadId: 639484
