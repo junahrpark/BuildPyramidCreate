@@ -1,0 +1,13 @@
+First of all thanks for buying this asset!
+
+For playing fps demo like you see on demo video you need to download free fps controller from Unity Asset Store.
+
+This one will be perfect - https://assetstore.unity.com/packages/tools/input-management/mini-first-person-controller-174710
+
+Drag n drop "First Person Controller" prefab to the scene and choose tag "Player", everything will run like you see on demo video.
+
+Activating Post Processing - download "Post Processing" package via package manager (Windows/Package Manager).
+
+Add "Post-process Layer" to you main camera and choose Layer "Default". 
+
+After add "Post-process Volume" check "Is Global" and choose PostFx profile that included in project folder.
