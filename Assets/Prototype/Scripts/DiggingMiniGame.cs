@@ -1,12 +1,10 @@
 using UnityEngine;
-using System;
 
 public class DiggingMiniGame : MonoBehaviour
 {
     public RectTransform needleTransform;
-    public float rotationSpeed = 180f;
-    public float successStartAngle = 210f;
-    public float successEndAngle = 250f;
+    public float successStartAngle = 285f;
+    public float successEndAngle = 350f;
 
     private GameObject coverObject;
     private string artifactID;
@@ -25,51 +23,68 @@ public class DiggingMiniGame : MonoBehaviour
 
     void Update()
     {
-        needleTransform.Rotate(0f, 0f, -rotationSpeed * Time.deltaTime);
 
+        // 입력 딜레이
         if (Time.time - uiActiveTime < inputDelay)
-            return;
+    return;
 
-        float angle = GetNeedleAngle();
-        bool isInZone = IsInAngleRange(angle, successStartAngle, successEndAngle);
+float angle = GetNeedleAngle();
+bool isInZone = IsInAngleRange(angle, successStartAngle, successEndAngle);
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (isInZone && hasExitedSuccessZone)
-            {
-                successCount++;
-                Debug.Log($"🎯 성공 카운트: {successCount}");
-                hasExitedSuccessZone = false;
+// 🔽 여기 로그만 한 줄 추가!
+//Debug.Log($"🧭 현재 바늘 각도: {angle}");
 
-                if (successCount == 1 || successCount == 2)
-                {
-                    if (coverObject != null) coverObject.transform.localScale *= 0.7f;
-                }
-                else if (successCount == 3)
-                {
-                    Debug.Log("✅ 3회 성공! 유물 발굴 완료!");
+// 마우스 클릭 성공 판정
+if (Input.GetMouseButtonDown(0))
+{
+    if (isInZone && hasExitedSuccessZone)
+    {
+        hasExitedSuccessZone = false;
+        successCount++;
+        Debug.Log($"🎯 성공 카운트: {successCount}");
+    }
+    else
+    {
+        Debug.Log("❌ 실패 구간 클릭");
+    }
+}
 
-                    // ✅ 여기서 직접 상태 저장!
-                    if (!string.IsNullOrEmpty(artifactID))
-                    {
-                        ArtifactStatusManager.Instance.SetFound(artifactID);
-                        Debug.Log($"💾 유물 {artifactID} 저장 완료!");
-                    }
 
-                    if (coverObject != null) coverObject.SetActive(false);
-                    this.gameObject.SetActive(false);
-                }
-            }
-            else
-            {
-                Debug.Log("❌ 실패 구간 클릭");
-            }
-        }
-
+        // 성공 구간 벗어남 체크
         if (!isInZone)
-        {
             hasExitedSuccessZone = true;
+
+        // ✅ 성공 횟수에 따라 커버 줄이기 & 처리
+        if (coverObject != null)
+        {
+            if (successCount == 1)
+            {
+                coverObject.transform.localScale = Vector3.one * 0.7f;
+                Debug.Log("📏 커버 크기 1단계 축소");
+            }
+            else if (successCount == 2)
+            {
+                coverObject.transform.localScale = Vector3.one * 0.49f;
+                Debug.Log("📏 커버 크기 2단계 축소");
+            }
+            else if (successCount >= 3)
+            {
+                Debug.Log("✅ 3회 성공 - 유물 발굴 완료!");
+
+                if (!string.IsNullOrEmpty(artifactID))
+                {
+                    ArtifactStatusManager.Instance.SetFound(artifactID);
+                    Debug.Log($"💾 유물 {artifactID} 저장 완료!");
+                }
+
+                coverObject.SetActive(false);
+                this.gameObject.SetActive(false);
+            }
         }
+        /*else
+        {
+            Debug.LogError("❌ coverObject가 설정되지 않았습니다!");
+        }*/
     }
 
     float GetNeedleAngle()
@@ -87,12 +102,13 @@ public class DiggingMiniGame : MonoBehaviour
             return angle >= start || angle <= end;
     }
 
-    // ✅ 새로 추가된 함수
     public void SetArtifactInfo(GameObject cover, string id)
     {
         coverObject = cover;
         artifactID = id;
         successCount = 0;
+
+        Debug.Log($"🎯 유물 정보 설정됨: ID={artifactID}, 오브젝트={coverObject?.name}");
     }
 
     void OnDisable()
