@@ -1,15 +1,16 @@
-// DiggingMiniGame.cs
 using UnityEngine;
-using UnityEngine.UI;
+using System;
 
 public class DiggingMiniGame : MonoBehaviour
 {
-    // --- (기존 변수 및 함수들은 그대로 둡니다) ---
     public RectTransform needleTransform;
     public float rotationSpeed = 180f;
     public float successStartAngle = 210f;
     public float successEndAngle = 250f;
-    public GameObject coverObject;
+
+    private GameObject coverObject;
+    private string artifactID;
+
     private int successCount = 0;
     private float uiActiveTime = 0f;
     private float inputDelay = 0.5f;
@@ -19,13 +20,11 @@ public class DiggingMiniGame : MonoBehaviour
     {
         uiActiveTime = Time.time;
         hasExitedSuccessZone = true;
-        // Reset success count when UI becomes active
         successCount = 0;
     }
 
     void Update()
     {
-        // --- (기존 Update 로직은 그대로 둡니다) ---
         needleTransform.Rotate(0f, 0f, -rotationSpeed * Time.deltaTime);
 
         if (Time.time - uiActiveTime < inputDelay)
@@ -34,20 +33,36 @@ public class DiggingMiniGame : MonoBehaviour
         float angle = GetNeedleAngle();
         bool isInZone = IsInAngleRange(angle, successStartAngle, successEndAngle);
 
-        if (Input.GetMouseButtonDown(0) && isInZone && hasExitedSuccessZone)
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("🎯 성공!");
-            successCount++;
-            hasExitedSuccessZone = false;
+            if (isInZone && hasExitedSuccessZone)
+            {
+                successCount++;
+                Debug.Log($"🎯 성공 카운트: {successCount}");
+                hasExitedSuccessZone = false;
 
-            if (successCount == 1 || successCount == 2)
-            {
-                if (coverObject != null) coverObject.transform.localScale *= 0.7f;
+                if (successCount == 1 || successCount == 2)
+                {
+                    if (coverObject != null) coverObject.transform.localScale *= 0.7f;
+                }
+                else if (successCount == 3)
+                {
+                    Debug.Log("✅ 3회 성공! 유물 발굴 완료!");
+
+                    // ✅ 여기서 직접 상태 저장!
+                    if (!string.IsNullOrEmpty(artifactID))
+                    {
+                        ArtifactStatusManager.Instance.SetFound(artifactID);
+                        Debug.Log($"💾 유물 {artifactID} 저장 완료!");
+                    }
+
+                    if (coverObject != null) coverObject.SetActive(false);
+                    this.gameObject.SetActive(false);
+                }
             }
-            else if (successCount >= 3)
+            else
             {
-                if (coverObject != null) coverObject.SetActive(false);
-                this.gameObject.SetActive(false); // UI 닫기 (이때 OnDisable 호출됨)
+                Debug.Log("❌ 실패 구간 클릭");
             }
         }
 
@@ -59,7 +74,6 @@ public class DiggingMiniGame : MonoBehaviour
 
     float GetNeedleAngle()
     {
-        // --- (기존 GetNeedleAngle 로직) ---
         float rawAngle = needleTransform.eulerAngles.z;
         float adjusted = (rawAngle - 270f + 360f) % 360f;
         return adjusted;
@@ -67,31 +81,22 @@ public class DiggingMiniGame : MonoBehaviour
 
     bool IsInAngleRange(float angle, float start, float end)
     {
-        // --- (기존 IsInAngleRange 로직) ---
         if (start < end)
             return angle >= start && angle <= end;
         else
             return angle >= start || angle <= end;
     }
 
-    public void SetCoverObject(GameObject cover)
+    // ✅ 새로 추가된 함수
+    public void SetArtifactInfo(GameObject cover, string id)
     {
-        // --- (기존 SetCoverObject 로직) ---
         coverObject = cover;
-        successCount = 0; // Reset count when setting a new object
+        artifactID = id;
+        successCount = 0;
     }
 
-
-    // --- 이 함수를 추가합니다 ---
-    // 이 UI 오브젝트가 비활성화될 때 자동으로 호출됩니다.
     void OnDisable()
     {
-        Debug.Log("DiggingMiniGame UI 비활성화됨. 컨트롤 복구 시도.");
-
-        // ✅ 보상 씬 오브젝트 활성화 예약
-        SceneRewardActivator.ActivateInNextScene();
-
-        // 기존 컨트롤 복구
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
         MouseLook mouseLook = FindObjectOfType<MouseLook>();
         PlayerInteraction playerInteraction = FindObjectOfType<PlayerInteraction>();
@@ -106,5 +111,4 @@ public class DiggingMiniGame : MonoBehaviour
             Cursor.visible = false;
         }
     }
-    // --------------------------
 }
