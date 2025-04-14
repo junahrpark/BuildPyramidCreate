@@ -202,10 +202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needleTransform: {fileID: 540321121857513213}
-  rotationSpeed: 90
   successStartAngle: 180
   successEndAngle: 270
-  coverObject: {fileID: 0}
 --- !u!1 &5099957378464914658
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +409,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needleTransform: {fileID: 540321121857513213}
-  rotationSpeed: 180
   successStartAngle: 210
   successEndAngle: 250
-  coverObject: {fileID: 0}
