@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 4586703557340537653, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891948703509353438, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
@@ -463,7 +463,7 @@ PrefabInstance:
     - target: {fileID: 4586703557340537653, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891948703509353438, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
@@ -685,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 4586703557340537653, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891948703509353438, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
@@ -996,7 +996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  codexSceneName: Pyramid
+  codexSceneName: Tomb
 --- !u!4 &587786118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8de551de01e8d5342b4e90497632f4f6,
@@ -1858,7 +1858,7 @@ PrefabInstance:
     - target: {fileID: 4586703557340537653, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891948703509353438, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
