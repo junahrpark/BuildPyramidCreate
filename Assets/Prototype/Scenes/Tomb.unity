@@ -4004,22 +4004,22 @@ PrefabInstance:
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.267248
+      value: 87.01
       objectReference: {fileID: 0}
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.66
+      value: -9.13
       objectReference: {fileID: 0}
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.017148616
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
@@ -4029,7 +4029,7 @@ PrefabInstance:
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70710677
+      value: -0.0000000745058
       objectReference: {fileID: 0}
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
@@ -4044,7 +4044,7 @@ PrefabInstance:
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1816181181051249778, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
         type: 3}
@@ -15915,6 +15915,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121923813663440903, guid: 5b5c3f6eb16065340b51ddd640387b38,
+        type: 3}
+      propertyPath: dropOnDestroy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121923813663440903, guid: 5b5c3f6eb16065340b51ddd640387b38,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,48 +1,75 @@
 using UnityEngine;
 
-// ½ºÅ©¸³Æ®°¡ ºÎÂøµÉ ¶§ ÀÚµ¿À¸·Î AudioSource¿Í Collider ÄÄÆ÷³ÍÆ®°¡ ÀÖ´ÂÁö È®ÀÎÇÏ°Å³ª Ãß°¡ÇÕ´Ï´Ù.
+// ìŠ¤í¬ë¦½íŠ¸ê°€ ë¶™ìœ¼ë©´ ìë™ìœ¼ë¡œ AudioSourceì™€ Collider ì»´í¬ë„ŒíŠ¸ê°€ ìˆëŠ”ì§€ í™•ì¸í•˜ê±°ë‚˜ ì¶”ê°€í•©ë‹ˆë‹¤.
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Collider))]
 public class ObjectClickSound : MonoBehaviour
 {
     private AudioSource audioSource;
 
-    // ¼±ÅÃ »çÇ×: ÀÎ½ºÆåÅÍ¿¡¼­ Æ¯Á¤ Å¬¸¯ »ç¿îµå¸¦ ÁöÁ¤ÇÏ°í ½ÍÀ» °æ¿ì »ç¿ë
+    // ì˜µì…˜: ì¸ìŠ¤í™í„°ì—ì„œ íŠ¹ì • í´ë¦­ ì‚¬ìš´ë“œë¥¼ ì§€ì •í•˜ì—¬ ì‚¬ìš© ê°€ëŠ¥
     public AudioClip specificClickSound;
 
     void Start()
     {
-        // ÀÌ °ÔÀÓ ¿ÀºêÁ§Æ®¿¡ ºÎÂøµÈ AudioSource ÄÄÆ÷³ÍÆ®¸¦ °¡Á®¿É´Ï´Ù.
+        // ì´ ê²Œì„ ì˜¤ë¸Œì íŠ¸ì— ë¶™ì–´ìˆëŠ” AudioSource ì»´í¬ë„ŒíŠ¸ë¥¼ ê°€ì ¸ì˜µë‹ˆë‹¤.
         audioSource = GetComponent<AudioSource>();
 
-        // ¾ÈÀü ÀåÄ¡: ¸¸¾à PlayOnAwake°¡ ÄÑÁ® ÀÖ´Ù¸é ²¨Áİ´Ï´Ù.
+        // ì•ˆì „ ì¥ì¹˜: ë§Œì•½ PlayOnAwakeê°€ ì¼œì ¸ ìˆë‹¤ë©´ ë•ë‹ˆë‹¤.
         if (audioSource.playOnAwake)
         {
             audioSource.playOnAwake = false;
         }
     }
 
-    // ÀÌ ¿ÀºêÁ§Æ®ÀÇ Collider À§¿¡¼­ ¸¶¿ì½º ¹öÆ°À» ´­·¶À» ¶§ È£ÃâµÇ´Â ÇÔ¼öÀÔ´Ï´Ù.
+    // ì´ ê²Œì„ì˜¤ë¸Œì íŠ¸ì˜ Collider ì˜ì—­ì„ ë§ˆìš°ìŠ¤ ë²„íŠ¼ìœ¼ë¡œ ëˆ„ë¥´ë©´ í˜¸ì¶œë˜ëŠ” í•¨ìˆ˜ì…ë‹ˆë‹¤.
     void OnMouseDown()
     {
-        // ÀÎ½ºÆåÅÍ¿¡¼­ specificClickSound¸¦ ÁöÁ¤Çß´Ù¸é ±×°ÍÀ» Àç»ı
+        AudioClip clipToPlay = null;
+
+        // ì¸ìŠ¤í™í„°ì—ì„œ specificClickSoundê°€ ì§€ì •ë˜ì—ˆë‹¤ë©´ ê·¸ê²ƒì„ ì‚¬ìš©
         if (specificClickSound != null)
         {
-            // PlayOneShotÀº »ç¿îµå°¡ ³¡³ª±â Àü¿¡ ´Ù½Ã Å¬¸¯ÇØµµ ÁßÃ¸ÇØ¼­ Àç»ıµË´Ï´Ù.
-            // È¿°úÀ½¿¡ ÀûÇÕÇÕ´Ï´Ù.
-            audioSource.PlayOneShot(specificClickSound);
+            clipToPlay = specificClickSound;
         }
-        // ±×·¸Áö ¾Ê°í AudioSourceÀÇ ±âº» AudioClipÀÌ ¼³Á¤µÇ¾î ÀÖ´Ù¸é ±×°ÍÀ» Àç»ı
+        // ê·¸ë ‡ì§€ ì•Šê³  AudioSourceì— ê¸°ë³¸ AudioClipì´ ì„¤ì •ë˜ì–´ ìˆë‹¤ë©´ ê·¸ê²ƒì„ ì‚¬ìš©
         else if (audioSource.clip != null)
         {
-            audioSource.PlayOneShot(audioSource.clip);
-            // ¸¸¾à »ç¿îµå°¡ °ãÄ¡Áö ¾Ê°í, ÀÌÀü Àç»ıÀÌ ³¡³ª¾ß ´ÙÀ½ Àç»ıÀÌ µÇ°Ô ÇÏ·Á¸é Play() »ç¿ë
-            // audioSource.Play();
+            clipToPlay = audioSource.clip;
+        }
+
+        // ì¬ìƒí•  í´ë¦½ì´ ìˆê³  AudioSourceê°€ ìœ íš¨í•œ ê²½ìš°
+        if (clipToPlay != null && audioSource != null)
+        {
+            // AudioSourceì˜ í˜„ì¬ í™œì„±í™” ìƒíƒœë¥¼ ì €ì¥í•©ë‹ˆë‹¤.
+            bool wasEnabled = audioSource.enabled;
+
+            // ë§Œì•½ AudioSourceê°€ ë¹„í™œì„±í™” ìƒíƒœì˜€ë‹¤ë©´,
+            if (!wasEnabled)
+            {
+                // ì ì‹œ í™œì„±í™”í•©ë‹ˆë‹¤.
+                audioSource.enabled = true;
+            }
+
+            // ì†Œë¦¬ë¥¼ ì¬ìƒí•©ë‹ˆë‹¤.
+            // PlayOneShotì€ AudioSourceê°€ í™œì„±í™”ëœ ìƒíƒœì—ì„œ í˜¸ì¶œë˜ì–´ì•¼ í•˜ì§€ë§Œ,
+            // ì¼ë‹¨ ì¬ìƒì´ ì‹œì‘ë˜ë©´ AudioSourceê°€ ë‹¤ì‹œ ë¹„í™œì„±í™”ë˜ì–´ë„ ì†Œë¦¬ëŠ” ëê¹Œì§€ ë‚©ë‹ˆë‹¤.
+            audioSource.PlayOneShot(clipToPlay);
+
+            // ë§Œì•½ ì›ë˜ ë¹„í™œì„±í™” ìƒíƒœì˜€ë‹¤ë©´,
+            if (!wasEnabled)
+            {
+                // ë‹¤ì‹œ ë¹„í™œì„±í™” ìƒíƒœë¡œ ë˜ëŒë¦½ë‹ˆë‹¤.
+                audioSource.enabled = false;
+            }
         }
         else
         {
-            // Àç»ıÇÒ ¿Àµğ¿À Å¬¸³ÀÌ ¾ø´Â °æ¿ì °æ°í ¸Ş½ÃÁö Ãâ·Â
-            Debug.LogWarning("Å¬¸¯ »ç¿îµå¸¦ Àç»ıÇÒ AudioClipÀÌ ÁöÁ¤µÇÁö ¾Ê¾Ò½À´Ï´Ù.", this.gameObject);
+            // ì¬ìƒí•  ì˜¤ë””ì˜¤ í´ë¦½ì´ ì—†ëŠ” ê²½ìš° ê²½ê³  ë©”ì‹œì§€ ì¶œë ¥
+            if(clipToPlay == null)
+                Debug.LogWarning("í´ë¦­ ì‹œ ì¬ìƒí•  AudioClipì´ ì§€ì •ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.", this.gameObject);
+            if(audioSource == null)
+                 Debug.LogWarning("AudioSource ì»´í¬ë„ŒíŠ¸ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", this.gameObject);
         }
     }
 }

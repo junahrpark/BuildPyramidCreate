@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Prototype/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Prototype/Scenes/prototype.unity
+    path: Assets/Prototype/Scenes/UIGameStart.unity
     guid: c69853d8341607f408d28432d7f68b3f
   - enabled: 1
-    path: Assets/ScriptBoy/Procedural Book/Demo/Scenes/05 Auto Turning.unity
+    path: Assets/Prototype/Scenes/05 Auto Turning.unity
     guid: 665013fd40c2073409cab1937874b520
   - enabled: 1
     path: Assets/Prototype/Scenes/Pyramid.unity

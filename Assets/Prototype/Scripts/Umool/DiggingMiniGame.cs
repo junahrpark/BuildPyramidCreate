@@ -1,18 +1,33 @@
 using UnityEngine;
 
+// AudioSource 컴포넌트가 항상 있도록 보장
+[RequireComponent(typeof(AudioSource))]
 public class DiggingMiniGame : MonoBehaviour
 {
     public RectTransform needleTransform;
     public float successStartAngle = 285f;
     public float successEndAngle = 350f;
 
+    [Header("사운드 설정")] // 인스펙터 가독성을 위한 헤더 추가
+    public AudioClip completionSound; // 발굴 완료 시 재생할 사운드
+
     private GameObject coverObject;
     private string artifactID;
+    private AudioSource audioSource; // AudioSource 컴포넌트 참조
 
     private int successCount = 0;
     private float uiActiveTime = 0f;
     private float inputDelay = 0.5f;
     private bool hasExitedSuccessZone = true;
+
+    // Awake는 Start보다 먼저 호출되며, 컴포넌트 참조 설정에 더 적합할 수 있습니다.
+    void Awake()
+    {
+        // AudioSource 컴포넌트 가져오기
+        audioSource = GetComponent<AudioSource>();
+        // 필요하다면 여기서 audioSource의 기본 설정 (예: playOnAwake 끄기)을 할 수 있습니다.
+        audioSource.playOnAwake = false;
+    }
 
     void OnEnable()
     {
@@ -70,6 +85,20 @@ if (Input.GetMouseButtonDown(0))
             else if (successCount >= 3)
             {
                 Debug.Log("✅ 3회 성공 - 유물 발굴 완료!");
+
+                // --- ✨ 완료 사운드 재생 추가 ✨ ---
+                if (completionSound != null && audioSource != null)
+                {
+                    // PlayOneShot으로 지정된 완료 사운드를 한 번 재생합니다.
+                    audioSource.PlayOneShot(completionSound);
+                    Debug.Log($"🔊 완료 사운드 재생: {completionSound.name}");
+                }
+                else
+                {
+                    if(completionSound == null) Debug.LogWarning("완료 사운드(completionSound)가 할당되지 않았습니다.");
+                    if(audioSource == null) Debug.LogWarning("AudioSource 컴포넌트를 찾을 수 없습니다.");
+                }
+                // --- 사운드 재생 코드 끝 ---
 
                 if (!string.IsNullOrEmpty(artifactID))
                 {
