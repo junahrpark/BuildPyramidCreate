@@ -1,6 +1,5 @@
 using UnityEngine;
 
-// AudioSource 컴포넌트가 항상 있도록 보장
 [RequireComponent(typeof(AudioSource))]
 public class DiggingMiniGame : MonoBehaviour
 {
@@ -8,24 +7,22 @@ public class DiggingMiniGame : MonoBehaviour
     public float successStartAngle = 285f;
     public float successEndAngle = 350f;
 
-    [Header("사운드 설정")] // 인스펙터 가독성을 위한 헤더 추가
-    public AudioClip completionSound; // 발굴 완료 시 재생할 사운드
+    [Header("사운드 설정")]
+    public AudioClip completionSound;
 
     private GameObject coverObject;
     private string artifactID;
-    private AudioSource audioSource; // AudioSource 컴포넌트 참조
+    private AudioSource audioSource;
 
     private int successCount = 0;
     private float uiActiveTime = 0f;
     private float inputDelay = 0.5f;
     private bool hasExitedSuccessZone = true;
+    private bool isComplete = false;
 
-    // Awake는 Start보다 먼저 호출되며, 컴포넌트 참조 설정에 더 적합할 수 있습니다.
     void Awake()
     {
-        // AudioSource 컴포넌트 가져오기
         audioSource = GetComponent<AudioSource>();
-        // 필요하다면 여기서 audioSource의 기본 설정 (예: playOnAwake 끄기)을 할 수 있습니다.
         audioSource.playOnAwake = false;
     }
 
@@ -34,42 +31,33 @@ public class DiggingMiniGame : MonoBehaviour
         uiActiveTime = Time.time;
         hasExitedSuccessZone = true;
         successCount = 0;
+        isComplete = false;
     }
 
     void Update()
     {
+        if (Time.time - uiActiveTime < inputDelay) return;
 
-        // 입력 딜레이
-        if (Time.time - uiActiveTime < inputDelay)
-    return;
+        float angle = GetNeedleAngle();
+        bool isInZone = IsInAngleRange(angle, successStartAngle, successEndAngle);
 
-float angle = GetNeedleAngle();
-bool isInZone = IsInAngleRange(angle, successStartAngle, successEndAngle);
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (isInZone && hasExitedSuccessZone)
+            {
+                hasExitedSuccessZone = false;
+                successCount++;
+                Debug.Log($"🎯 성공 카운트: {successCount}");
+            }
+            else
+            {
+                Debug.Log("❌ 실패 구간 클릭");
+            }
+        }
 
-// 🔽 여기 로그만 한 줄 추가!
-//Debug.Log($"🧭 현재 바늘 각도: {angle}");
-
-// 마우스 클릭 성공 판정
-if (Input.GetMouseButtonDown(0))
-{
-    if (isInZone && hasExitedSuccessZone)
-    {
-        hasExitedSuccessZone = false;
-        successCount++;
-        Debug.Log($"🎯 성공 카운트: {successCount}");
-    }
-    else
-    {
-        Debug.Log("❌ 실패 구간 클릭");
-    }
-}
-
-
-        // 성공 구간 벗어남 체크
         if (!isInZone)
             hasExitedSuccessZone = true;
 
-        // ✅ 성공 횟수에 따라 커버 줄이기 & 처리
         if (coverObject != null)
         {
             if (successCount == 1)
@@ -82,23 +70,23 @@ if (Input.GetMouseButtonDown(0))
                 coverObject.transform.localScale = Vector3.one * 0.49f;
                 Debug.Log("📏 커버 크기 2단계 축소");
             }
-            else if (successCount >= 3)
+            else if (successCount >= 3 && !isComplete)
             {
+                isComplete = true;
                 Debug.Log("✅ 3회 성공 - 유물 발굴 완료!");
 
-                // --- ✨ 완료 사운드 재생 추가 ✨ ---
                 if (completionSound != null && audioSource != null)
                 {
-                    // PlayOneShot으로 지정된 완료 사운드를 한 번 재생합니다.
                     audioSource.PlayOneShot(completionSound);
                     Debug.Log($"🔊 완료 사운드 재생: {completionSound.name}");
                 }
                 else
                 {
-                    if(completionSound == null) Debug.LogWarning("완료 사운드(completionSound)가 할당되지 않았습니다.");
-                    if(audioSource == null) Debug.LogWarning("AudioSource 컴포넌트를 찾을 수 없습니다.");
+                    if (completionSound == null)
+                        Debug.LogWarning("완료 사운드(completionSound)가 할당되지 않았습니다.");
+                    if (audioSource == null)
+                        Debug.LogWarning("AudioSource 컴포넌트를 찾을 수 없습니다.");
                 }
-                // --- 사운드 재생 코드 끝 ---
 
                 if (!string.IsNullOrEmpty(artifactID))
                 {
@@ -110,10 +98,6 @@ if (Input.GetMouseButtonDown(0))
                 this.gameObject.SetActive(false);
             }
         }
-        /*else
-        {
-            Debug.LogError("❌ coverObject가 설정되지 않았습니다!");
-        }*/
     }
 
     float GetNeedleAngle()
