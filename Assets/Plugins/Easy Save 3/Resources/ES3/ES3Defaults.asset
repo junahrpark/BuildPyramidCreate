@@ -35,8 +35,12 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
-    - Assembly-CSharp-firstpass
+    - AiToolbox
+    - AiToolbox.Samples
     - Assembly-CSharp
+    - Assembly-CSharp-firstpass
+    - ScriptBoy.ProceduralBook.Demo
+    - ScriptBoy.ProceduralBook.Runtime
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
