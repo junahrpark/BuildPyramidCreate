@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 662364193873436712}
   - component: {fileID: 6938597009273664240}
   - component: {fileID: 7754600916849647969}
+  - component: {fileID: 5748150767517142005}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -143,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 814940868968586063}
-  interactDistance: 3
+  interactDistance: 1
 --- !u!82 &6938597009273664240
 AudioSource:
   m_ObjectHideFlags: 0
@@ -258,6 +259,33 @@ MonoBehaviour:
   timeBetweenSteps: 0.3
   characterController: {fileID: 4800547528892399066}
   movementThreshold: 0.1
+--- !u!54 &5748150767517142005
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874807228793216712}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6987753259759162242
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +298,7 @@ GameObject:
   - component: {fileID: 814940868968586063}
   - component: {fileID: 2959425382990589150}
   - component: {fileID: 3841711546770652618}
-  - component: {fileID: 872952290376355706}
+  - component: {fileID: 2520843518099565385}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -397,7 +425,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &872952290376355706
+--- !u!114 &2520843518099565385
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
