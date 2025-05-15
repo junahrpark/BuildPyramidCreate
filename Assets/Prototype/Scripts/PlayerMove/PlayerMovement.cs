@@ -1,4 +1,4 @@
-// PlayerMovement.cs - CharacterController.isGrounded »ç¿ë ¹öÀü
+// PlayerMovement.cs - CharacterController.isGrounded ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -9.81f * 2;
     public float jumpHeight = 3f;
 
-    // --- CharacterController.isGrounded¸¦ »ç¿ëÇÏ¹Ç·Î ¾Æ·¡ º¯¼öµéÀº ÇÊ¿ä ¾ø½À´Ï´Ù ---
+    // --- CharacterController.isGroundedï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¹Ç·ï¿½ ï¿½Æ·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ---
     // public Transform groundCheck;
     // public LayerMask groundMask;
     // public float groundDistance = 0.4f;
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     CharacterController controller;
     Vector3 velocity;
-    // bool isGrounded; // CharacterControllerÀÇ isGrounded¸¦ Á÷Á¢ »ç¿ë
+    // bool isGrounded; // CharacterControllerï¿½ï¿½ isGroundedï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 
     void Start()
     {
@@ -25,40 +25,40 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // --- ¹Ù´Ú °¨Áö (CharacterController ³»Àå ±â´É »ç¿ë) ---
-        // ÀÌÀü Physics.CheckSphere ¶óÀÎÀ» »èÁ¦ÇÏ°í ¾Æ·¡Ã³·³ controller.isGrounded »ç¿ë
+        // --- ï¿½Ù´ï¿½ ï¿½ï¿½ï¿½ï¿½ (CharacterController ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½) ---
+        // ï¿½ï¿½ï¿½ï¿½ Physics.CheckSphere ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Æ·ï¿½Ã³ï¿½ï¿½ controller.isGrounded ï¿½ï¿½ï¿½
         bool isGrounded = controller.isGrounded;
 
-        // ¶¥¿¡ ´ê¾Æ ÀÖ°í ¼öÁ÷ ¼Óµµ°¡ 0 ÀÌÇÏÀÌ¸é ¼Óµµ ¸®¼Â (¹Ù´Ú¿¡ ºÙ¾îÀÖµµ·Ï)
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ 0 ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½Ù´Ú¿ï¿½ ï¿½Ù¾ï¿½ï¿½Öµï¿½ï¿½ï¿½)
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
 
-        // --- ÀÌµ¿ Ã³¸® ---
+        // --- ï¿½Ìµï¿½ Ã³ï¿½ï¿½ ---
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
 
-        // --- Á¡ÇÁ Ã³¸® ---
-        // Jump ¹öÆ°ÀÌ ´­·È°í, CharacterController°¡ ¶¥¿¡ ÀÖ´Ù°í ÆÇ´ÜÇÏ¸é Á¡ÇÁ
-        if (Input.GetButtonDown("Jump") && isGrounded) // ¿©±â¼­ isGrounded´Â controller.isGrounded °ªÀÔ´Ï´Ù.
+        // --- ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ---
+        // Jump ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½È°ï¿½, CharacterControllerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù°ï¿½ ï¿½Ç´ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½
+        if (Input.GetButtonDown("Jump") && isGrounded) // ï¿½ï¿½ï¿½â¼­ isGroundedï¿½ï¿½ controller.isGrounded ï¿½ï¿½ï¿½Ô´Ï´ï¿½.
         {
-            // Á¡ÇÁ¿¡ ÇÊ¿äÇÑ yÃà ¼Óµµ °è»ê
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ yï¿½ï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        // --- Áß·Â Àû¿ë ---
+        // --- ï¿½ß·ï¿½ ï¿½ï¿½ï¿½ï¿½ ---
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime); // Áß·Â ¹× Á¡ÇÁ ¼Óµµ Àû¿ë
+        controller.Move(velocity * Time.deltaTime); // ï¿½ß·ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
-    // --- OnDrawGizmosSelected ÇÔ¼öµµ ÇÊ¿ä ¾øÀ¸¹Ç·Î »èÁ¦ÇØµµ µË´Ï´Ù ---
+    // --- OnDrawGizmosSelected ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ ï¿½Ë´Ï´ï¿½ ---
     /*
     void OnDrawGizmosSelected()
     {
-        // ... (ÀÌ ÇÔ¼ö ³»¿ë »èÁ¦) ...
+        // ... (ï¿½ï¿½ ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) ...
     }
     */
 }
