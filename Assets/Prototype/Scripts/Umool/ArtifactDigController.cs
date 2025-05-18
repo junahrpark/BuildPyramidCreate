@@ -40,7 +40,7 @@ public class ArtifactDigController : MonoBehaviour
         {
             Debug.Log("컨트롤 비활성화 및 커서 잠금 해제 시도...");
 
-            if (playerMovement != null) playerMovement.enabled = false;
+            if (playerMovement != null) playerMovement.canMove = false;
             if (mouseLook != null) mouseLook.enabled = false;
             if (playerInteraction != null) playerInteraction.enabled = false;
 

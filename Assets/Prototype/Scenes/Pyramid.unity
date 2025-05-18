@@ -618,7 +618,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mouseLook
       value: 
-      objectReference: {fileID: 619551719}
+      objectReference: {fileID: 0}
     - target: {fileID: 2337062849533734600, guid: 0f77dc3621da79c4c876892bbb4ca718,
         type: 3}
       propertyPath: artifactID
@@ -2383,18 +2383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1723a3f676d81246b9da32d3e600bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &619551719 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 872952290376355706, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 619551717}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74232964cc6785a44950082341952e65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &619551720 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5717059429319236889, guid: bf0dae0b7ccb0724582fc9c68be7fc9d,
@@ -3967,6 +3955,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 88.149
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965265048416818853, guid: 587db7833a68fc44883a099f6f655b39,
+        type: 3}
+      propertyPath: successEndAngle
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965265048416818853, guid: 587db7833a68fc44883a099f6f655b39,
+        type: 3}
+      propertyPath: successStartAngle
+      value: 290
       objectReference: {fileID: 0}
     - target: {fileID: 7268698558916820248, guid: 587db7833a68fc44883a099f6f655b39,
         type: 3}

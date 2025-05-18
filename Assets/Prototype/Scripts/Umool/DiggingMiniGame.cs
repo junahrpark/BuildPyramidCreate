@@ -130,7 +130,7 @@ public class DiggingMiniGame : MonoBehaviour
         MouseLook mouseLook = FindObjectOfType<MouseLook>();
         PlayerInteraction playerInteraction = FindObjectOfType<PlayerInteraction>();
 
-        if (playerMovement != null) playerMovement.enabled = true;
+        if (playerMovement != null) playerMovement.canMove = true;
         if (mouseLook != null) mouseLook.enabled = true;
         if (playerInteraction != null) playerInteraction.enabled = true;
 
