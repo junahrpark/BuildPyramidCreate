@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     public Camera playerCamera;         // 플레이어 카메라
-    public float interactDistance = 3f; // 클릭 가능 거리
+    public float interactDistance = 20f; // 클릭 가능 거리
 
     void Update()
     {
