@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -146}
-  m_SizeDelta: {x: 200, y: 70}
+  m_AnchoredPosition: {x: -5, y: -274}
+  m_SizeDelta: {x: 524.59, y: 183.604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &308852644398221626
 CanvasRenderer:
@@ -273,8 +273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: 6.6671, y: -0.00047302}
+  m_SizeDelta: {x: 2206.3, y: 982.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6658874542109544972
 CanvasRenderer:
@@ -348,7 +348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6, y: -1}
+  m_AnchoredPosition: {x: -6, y: -0.9999695}
   m_SizeDelta: {x: 1860, y: 538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6744183515326219342
@@ -424,8 +424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 150}
-  m_SizeDelta: {x: 200, y: 70}
+  m_AnchoredPosition: {x: -6, y: 289}
+  m_SizeDelta: {x: 510.689, y: 178.742}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5810985955693030569
 CanvasRenderer:
@@ -556,8 +556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 200, y: 70}
+  m_AnchoredPosition: {x: -5.6519, y: 3.9785}
+  m_SizeDelta: {x: 526.04, y: 184.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6080137208760657476
 CanvasRenderer:
@@ -669,7 +669,7 @@ PrefabInstance:
     - target: {fileID: 3539772262902936135, guid: 3a8a468059fe80f419740b27992eb2bc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6705063056837757766, guid: 3a8a468059fe80f419740b27992eb2bc,
         type: 3}
