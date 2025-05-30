@@ -4,7 +4,7 @@ using UnityEngine.EventSystems; // UI 클릭 감지를 위해 필요
 public class PlayerInteraction : MonoBehaviour
 {
     public Camera playerCamera;         // 플레이어 카메라 (인스펙터에서 할당)
-    public float interactDistance = 10f; // 클릭 가능 거리
+    public float interactDistance = 100f; // 클릭 가능 거리
 
     void Awake()
     {

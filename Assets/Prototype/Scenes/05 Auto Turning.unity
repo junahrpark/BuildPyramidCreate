@@ -3100,15 +3100,15 @@ MonoBehaviour:
   - {fileID: 276697214}
   pageSprites:
   - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
-  - {fileID: 21300000, guid: 3a6aa722ac5348744ac74252f0219170, type: 3}
+  - {fileID: -1822164528, guid: 6a724250ee75f54459fe9b8a519fec49, type: 3}
+  - {fileID: -886484381, guid: 4fbcd1af66d671245ace7b1df494919e, type: 3}
+  - {fileID: -1439449585, guid: 23b9418cf1071994c9834b8e2f65a6b9, type: 3}
+  - {fileID: -1245655758, guid: a6915ab155ae43b47b44f54bee1feef7, type: 3}
+  - {fileID: -467263924, guid: 042ff1eb40e5c4e409e0474b8701acaa, type: 3}
+  - {fileID: 1896611427, guid: c34fb0a2a295756479170dda1e9cb30d, type: 3}
+  - {fileID: 1321997789, guid: af2bf7038f7cc2b4397ec1589fa18361, type: 3}
+  - {fileID: -343390789, guid: 4b35bd3d55219054cb5f7cdf91514c21, type: 3}
+  - {fileID: 1896611427, guid: c34fb0a2a295756479170dda1e9cb30d, type: 3}
   bookContent: {fileID: 1140580753}
   completionText: {fileID: 163435015}
 --- !u!4 &1889442561
