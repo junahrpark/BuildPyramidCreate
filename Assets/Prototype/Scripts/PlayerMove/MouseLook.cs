@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    public float mouseSensitivity = 100f; // 마우스 감도
+    public float mouseSensitivity = 25f; // 마우스 감도
 
     public Transform playerBody; // 플레이어 몸체 Transform
 

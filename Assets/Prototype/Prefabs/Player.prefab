@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6938597009273664240}
   - component: {fileID: 7754600916849647969}
   - component: {fileID: 5748150767517142005}
+  - component: {fileID: 3627910491309169554}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -287,6 +288,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3627910491309169554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874807228793216712}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc0faeee1d8eb4a8a79c45bb624ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 814940868968586063}
+  interactionDistance: 100
 --- !u!1 &6987753259759162242
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74232964cc6785a44950082341952e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 500
+  mouseSensitivity: 80
   playerBody: {fileID: 1816181181051249778}
 --- !u!1001 &2860622563624311117
 PrefabInstance:
